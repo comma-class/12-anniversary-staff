@@ -40,7 +40,7 @@ button{border:0;border-radius:10px;padding:12px 17px;font-weight:800;cursor:poin
 
 <h2 class="heading">02｜夥伴資料</h2><section class="panel"><div class="two">
 <div class="field"><label for="name">夥伴姓名 *</label><input id="name" required placeholder="請填寫本名" autocomplete="name"></div>
-<div class="field"><label for="school">所屬分校／單位 *</label><select id="school" required><option value="" selected disabled>請選擇所屬分校</option><option>青埔翱翔校</option><option>青園展翅校</option><option>文化極光校</option><option>大園晨光校</option><option>內壢森耀校</option><option>竹北知行校</option><option>快樂騰雲校</option><option>大園參天校</option><option>園中方舟校</option><option>青埔旭日校</option><option>中壢心夢想校</option><option>青埔升大校</option><option>集團總部</option></select></div>
+<div class="field"><label for="school">所屬分校／單位 *</label><select id="school" required><option value="" selected disabled>請選擇所屬分校</option><option>青埔翱翔校</option><option>青園展翅校</option><option>文化極光校</option><option>大園晨光校</option><option>內壢森耀校</option><option>竹北知行校</option><option>快樂騰雲校</option><option>大園參天校</option><option>園中方舟校</option><option>青埔旭日校</option><option>中壢心夢想校</option><option>青埔升大校</option><option>總部</option></select></div>
 </div>
 <button class="orange wide" id="submit" style="margin-top:18px">確認送出登記</button><p class="error" id="error" role="alert"></p>
 <div id="fallback" hidden><h3>⚠️ 登記尚未送出</h3><p class="muted" id="fbMsg"></p><div id="fbCard"></div><button class="secondary" id="fbCopy">複製登記內容</button><p class="status" id="fbStatus"></p></div>
@@ -61,7 +61,7 @@ button{border:0;border-radius:10px;padding:12px 17px;font-weight:800;cursor:poin
 /* Google 試算表收單網址 */
 const SHEET_URL='https://script.google.com/macros/s/AKfycbyib4ZX2XBJI_8F6NCgcAVD8pfHP9FXAN1VdylIVnSjaqn0dmjEJeYywdEEluBPAeMk/exec';
 /* 登記截止時間：例如 '2026-12-10T18:00:00+08:00'；留 null 表示「另行公告」、不倒數、不關閉 */
-const REG_END=null;
+const REG_END='2026-12-01T12:00:00+08:00';
 /* ===================================================== */
 const END=REG_END?new Date(REG_END):null;
 const sizes=['130','140','XS','S','M','L','XL','2XL','3XL'];
